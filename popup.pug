@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='./popup.css')
+  body
+    template#tab: li: div
+      h3.title name
+      h3.usage usage
+
+    .tabs
+      button.tab-link.active#cpu-button 🔥
+      button.tab-link#mem-button 🐋
+      button.tab-link#settings-button 🔧
+
+    .tab-content#cpu
+      ul.browser-tabs
+    .tab-content#mem
+      ul.browser-tabs
+    .tab-content#settings
+      #settings TODO
+    
+    script(src='./popup.js' type='module')

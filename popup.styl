@@ -1,0 +1,61 @@
+body
+  min-width 40rem
+
+.tabs
+  overflow hidden
+  border 1px solid #ccc
+  background-color #f1f1f1
+
+.tabs button
+  background-color inherit
+  &.active
+    background-color #ccc
+  &:hover
+    background-color #ddd
+  border none
+  outline none
+  cursor pointer
+  padding 14px 16px
+  transition 0.3s
+
+.tab-content
+  display none
+  &#cpu
+    display block
+  padding 6px 12px
+  border 1px solid #ccc
+  border-top none
+
+.browser-tabs
+  div
+    box-sizing content-box
+    display block
+    cursor pointer
+    h3
+      text-overflow clip
+      white-space nowrap
+      overflow hidden
+      float left
+      padding 0px 4px
+      box-sizing border-box
+      &.title
+        width 80%
+      &.usage
+        width 20%
+
+ul
+  list-style-type none
+  padding-inline-start 0
+  padding 0.5rem 0
+  width 100%
+  display table
+
+li
+  width 100%
+  display table-row
+
+li:nth-child(odd)
+  background #80808030
+
+li:nth-child(even)
+  background #ffffff

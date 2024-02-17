@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "pug": "^3.0.2",
+    "stylus": "^0.62.0"
+  },
+  "name": "tabmonitor",
+  "version": "0.0.1",
+  "description": "CPU and Memory usage monitor for Chrome tabs.",
+  "main": "build.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cpu",
+    "memory",
+    "monitor"
+  ],
+  "author": "Igor Kaplounenko",
+  "license": "ISC"
+}
