@@ -52,8 +52,10 @@ function populateTab(metric, formatter = (m) => m) {
 
 populateTab('cpu', (metric) => metric.toFixed(2) + '%');
 populateTab('mem', formatBytes);
+populateTab('js', formatBytes);
+populateTab('net', formatBytes);
 
-for (const name of ['cpu', 'mem', 'settings']) {
+for (const name of ['cpu', 'mem', 'js', 'net']) {
   document.getElementById(name + '-button').addEventListener('click',
     (evt) => openTab(evt, name));
 };

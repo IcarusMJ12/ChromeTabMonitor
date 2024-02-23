@@ -12,13 +12,19 @@ html(lang='en')
     .tabs
       button.tab-link.active#cpu-button 🔥
       button.tab-link#mem-button 🐋
-      button.tab-link#settings-button 🔧
+      button.tab-link#js-button js
+      button.tab-link#net-button 🚿
+      // button.tab-link#settings-button 🔧
 
     .tab-content#cpu
       ul.browser-tabs
     .tab-content#mem
       ul.browser-tabs
-    .tab-content#settings
-      #settings TODO
+    .tab-content#js
+      ul.browser-tabs
+    .tab-content#net
+      ul.browser-tabs
+    // .tab-content#settings
+    //  #settings TODO
     
     script(src='./popup.js' type='module')
