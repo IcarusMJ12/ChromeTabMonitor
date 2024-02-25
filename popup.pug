@@ -10,11 +10,11 @@ html(lang='en')
       h3.usage usage
 
     .tabs
-      button.tab-link.active#cpu-button 🔥
-      button.tab-link#mem-button 🐋
-      button.tab-link#js-button js
-      button.tab-link#net-button 🚿
-      // button.tab-link#settings-button 🔧
+      button.tab-link.active#cpu-button(title='CPU') 🔥
+      button.tab-link#mem-button(title='Process Memory') 🐋
+      button.tab-link#js-button(title='JavaScript Memory') js
+      button.tab-link#net-button(title='Bandwidth') 🚿
+      // button.tab-link#settings-button(title='Settings') 🔧
 
     .tab-content#cpu
       ul.browser-tabs
