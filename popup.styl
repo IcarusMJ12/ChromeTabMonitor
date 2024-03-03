@@ -1,4 +1,5 @@
 body
+  box-sizing border-box
   width 40rem
 
 .tabs
@@ -24,36 +25,34 @@ body
   display none
   &#cpu
     display block
-  padding 6px 12px
   border 1px solid #ccc
   border-top none
 
 .browser-tabs
   div
-    box-sizing content-box
     display block
     cursor pointer
+    width 40rem
     h3
       text-overflow clip
       white-space nowrap
       overflow hidden
       float left
-      padding 0px 4px
-      box-sizing border-box
+      padding 0px 8px
       &.title
-        width 80%
+        width 84%
       &.usage
-        width 20%
+        width 16%
 
 ul
   list-style-type none
-  padding-inline-start 0
-  padding 0.5rem 0
+  table-layout fixed
+  padding 0.5rem 0rem
+  margin 0px 0px
   width 100%
   display table
 
 li
-  width 100%
   display table-row
 
 li:nth-child(odd)
@@ -61,3 +60,6 @@ li:nth-child(odd)
 
 li:nth-child(even)
   background #ffffff
+
+*, *:before, *:after
+  box-sizing inherit
