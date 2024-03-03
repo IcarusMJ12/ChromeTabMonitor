@@ -22,5 +22,5 @@
   
   <circle cx="32" cy="32" r="12" style="fill:#fff"/>
   <circle cx="32" cy="32" r="9.5" style="fill:#1a73e8" filter="hue-rotate(120deg)"/>
-  <path d="M 2,32  A 31,31  0  0,0 62,32 A 31,31  0  0,0 2,32  Z" style="stroke: white; stroke-width: 3; fill: transparent"/>
+  <path d="M 2,32  A 31,31  0  0,0 62,32 A 31,31  0  0,0 2,32  Z" style="stroke: #1a73e8; stroke-width: 3; fill: transparent" filter="hue-rotate(120deg)"/>
 </svg>

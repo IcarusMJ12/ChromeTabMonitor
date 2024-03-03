@@ -8,7 +8,8 @@ chrome.processes.onUpdatedWithMemory.addListener((processes) => {
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   (async () => {
-    const tabs = await chrome.tabs.query({ discarded: false });
+    const tabs = await chrome.tabs.query({ currentWindow: true,
+                                           discarded: false });
     const process_ids = await Promise.all(tabs.map(async (tab) =>
       await chrome.processes.getProcessIdForTab(tab.id)));
     return tabs.map((t, i) => ({ tab: t, pid: process_ids[i],
