@@ -1,5 +1,8 @@
+/*.png
 *.webp
 node_modules/
 package-lock.json
 popup.css
 popup.html
+TabMonitor/
+TabMonitor.zip
