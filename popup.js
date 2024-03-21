@@ -1,5 +1,5 @@
 const limit = 5;
-const template = document.getElementById('tab')
+const template = document.getElementById('tab');
 const usage = await chrome.runtime.sendMessage({});
 
 // https://stackoverflow.com/questions/15900485/correct-way-to-convert-size-in-bytes-to-kb-mb-gb-in-javascript
